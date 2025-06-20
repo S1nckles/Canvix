@@ -1,21 +1,22 @@
 <?php
-$hero = get_field('hero_section');
+$hero = get_field('hero_section', get_the_ID());
 if ($hero): ?>
-  <section class="services">
-  <div class="container">
-    <h2><?= esc_html(get_field('services_title')) ?></h2>
-    <div class="service-cards">
-      <?php for ($i = 1; $i <= 3; $i++): 
-        $service = get_field("service_$i");
-        if ($service): ?>
-          <div class="service-card">
-            <div class="icon"><?= wp_kses_post($service['icon']) ?></div>
-            <h3><?= esc_html($service['title']) ?></h3>
-            <p><?= esc_html($service['description']) ?></p>
-          </div>
-      <?php endif; endfor; ?>
-    </div>
-  </div>
-</section>
+  <section class="hero">
+    <div class="container">
+      <?php if (!empty($hero['title'])): ?>
+        <h1><?= esc_html($hero['title']) ?></h1>
+      <?php endif; ?>
 
+      <?php if (!empty($hero['description'])): ?>
+        <p><?= esc_html($hero['description']) ?></p>
+      <?php endif; ?>
+
+      <?php if (!empty($hero['button_text']) && !empty($hero['button_url'])): ?>
+        <a href="<?= esc_url($hero['button_url']) ?>" class="btn">
+          <?= esc_html($hero['button_text']) ?>
+        </a>
+      <?php endif; ?>
+    </div>
+  </section>
 <?php endif; ?>
+
