@@ -53,6 +53,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	--primary-color: #64CCC5;
 	--black-color: #0C0C0C;
 	--white-color: #FBFBFB;
+	--light-grey-color: #F4F4F4;
+
 }
 
 body {
@@ -61,6 +63,7 @@ body {
    color: var(--white-color);
    background-color: #0000 !important;
    margin: 0;
+ 
    padding: 0;
 }
 
@@ -117,8 +120,6 @@ body {
 	object-fit: cover;
 	object-position: center;
 }
-.nav {
-}
 .nav__links {
 	display: flex;
 	gap: 30px;
@@ -135,3 +136,215 @@ body {
 .nav__link a:hover {
  	color: var(--primary-color);
 }
+
+/* Hero Section Styles */
+
+.hero {
+	padding: 262px 0 123px 0;
+	background: #000000
+}
+.hero__inner {
+	display: flex;
+	flex-direction: row;
+    align-items: flex-start;
+	justify-content: space-between;
+}
+.hero__content {
+	max-width: 608px;
+}
+.hero__title {
+	font-family: 'Roboto Serif',
+	sans-serif;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 75px;
+	color: var(--white-color);
+	margin-bottom: 24px;
+}
+.hero__title span {
+	color: var(--primary-color);
+}
+.hero__desc {
+	max-width: 557px;
+	margin-bottom: 32px;
+
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 3%;
+
+	color: var(--white-color);
+}
+.btn-link {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	padding: 12px 15px 12px 50px;
+}
+.btn-link::after {
+	position: absolute;
+	left: 13px;
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #000000;
+}
+.hero__brands {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 180px;
+}
+.brands__title {
+	padding-left: 14px;
+
+	font-family: 'Roboto Serif', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--primary-color);
+}
+.brands__list {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+	padding-top: 10px;
+
+}
+.brands__list img {
+	max-width: 145px;
+	max-height: 55px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero__image-border {
+	border-radius: 50%;
+	width: 550px;
+	height: 550px;
+	position: relative;
+	box-shadow: 0 0 5000px 300px rgba(139, 139, 139, 0.25);
+}
+.hero__image-border::before {
+	content: '';
+	position: absolute;
+	top: -100px;
+	left: -100px;
+	width: 750px;
+	height: 750px;
+	background-color: transparent;
+	border: 1px solid rgba(100, 204, 197, 0.274);;
+	border-radius: 50%;
+	transition: background-color 0.3s ease;
+}
+.hero__image-border::after {
+	content: '';
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 650px;
+	height: 650px;
+	background-color: transparent;
+	border: 1px solid rgba(100, 204, 197, 0.151);
+	border-radius: 50%;
+	transition: background-color 0.3s ease;
+}
+.hero__image-border img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	border-radius: 50%;
+}
+
+/* Services Style */
+
+.services {
+	padding: 100px 0;
+}
+.services__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+.services__title-wrapper {
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Roboto Serif', sans-serif;
+}
+.services__subtitle {
+	color: #64CCC5;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 600;
+}
+.services__title {
+	max-width: 695px;
+	margin-top: 24px;
+	color: var(--black-color);
+	font-size: 64px;
+	line-height: 75px;
+	font-weight: 600;
+}
+.service__cards {
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 66px;
+}
+.service__card {
+	background-color: var(--light-grey-color);
+	color: var(--black-color);
+	width: 30.1%;
+	padding: 45px;
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 62px;
+	
+	transition: background-color 0.5s ease;
+}
+.service__card:hover {
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+.service__card-icon {
+}
+.service__card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.service__card-title {
+	font-family: 'Roboto Serif',
+	sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 29px;
+}
+.service__card-description {
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 3%;
+}
+
+.service__card-icon svg {
+	fill: currentColor;
+	stroke: currentColor;
+	width: 32px;
+	height: 32px;
+	transition: all 0.3s ease;
+  }
+  
+  .service__card:hover .service__card-icon {
+	color: var(--white-color);
+  }
+  
+
