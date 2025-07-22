@@ -10,7 +10,7 @@
   <div class="container">
     <div class="services__inner">
       <div class="services__title-wrapper">
-        <span class="services__subtitle">Our Services</span>
+        <span class="section__subtitle">Our Services</span>
         <h2 class="services__title"><?= esc_html(get_field('services_title')) ?></h2>
       </div>
       <div class="service__cards">
