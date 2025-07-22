@@ -1,24 +1,63 @@
 <?php
 $about = get_field('about_short', get_the_ID());
 if ($about): ?>
-  <section class="about-short">
+  <section class="about_short">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <?php if (!empty($about['title'])): ?>
-            <h2><?= esc_html($about['title']) ?></h2>
-          <?php endif; ?>
-
-          <?php if (!empty($about['description'])): ?>
-            <p><?= esc_html($about['description']) ?></p>
-          <?php endif; ?>
+      <div class="about__inner">
+        <div class="about_image-list">
+          <?php
+          $about_short = get_field('about_short');
+          for ($i = 1; $i <= 3; $i++):
+            $image = $about_short["image_$i"];
+            if ($image):
+          ?>
+            <div class="about__image">
+                <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>">
+            </div>
+          <?php
+              endif;
+          endfor;
+          ?>
         </div>
 
-        <?php if (!empty($about['image'])): ?>
-          <div class="about-image">
-            <img src="<?= esc_url($about['image']['url']) ?>" alt="<?= esc_attr($about['image']['alt']) ?>">
+        <div class="about__content">
+
+          <!-- Треба зробити глобальний стиль бо майже для всіх секціїв є такий стиль і span для тайтлу секції -->
+          <span class="section__subtitle">About us</span>
+          <!--  -->
+          
+          <?php if (!empty($about['title'])): ?>
+            <h2 class="about__title"><?= esc_html($about['title']) ?></h2>
+          <?php endif; ?>
+          
+          <?php if (!empty($about['description'])): ?>
+            <p class="about__desc"><?= esc_html($about['description']) ?></p>
+          <?php endif; ?>
+
+          <div class="about__main-counts">
+            <div class="about__main-count">
+              <span>330 +</span>
+              <p>Companies helped</p>
+            </div>
+            <div class="about__main-count">
+              <span>230 +</span>
+              <p>Revenue generated</p>
+            </div>
           </div>
-        <?php endif; ?>
+
+          <!-- Робив похожу кнопку в hero просто візьму з відтам стилі та розмітку -->
+        
+          <?php if (!empty($about_short['button_text']) && !empty($about_short['button_url'])): ?>
+            <a href="<?= esc_url($about_short['button_url']) ?>" class="btn btn-link btn-about">
+              <?= esc_html($about_short['button_text']) ?>
+            </a>
+          <?php endif; ?> 
+
+          
+         
+        </div>
+
+        
       </div>
     </div>
   </section>
