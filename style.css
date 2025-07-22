@@ -92,6 +92,13 @@ body {
    background-color: #E0E0E0;
 }
 
+.section__subtitle {
+	color: #64CCC5;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 600;
+}
+
 /* Header Styles */
 
 .header {
@@ -277,12 +284,6 @@ body {
 	margin: 0 auto;
 	font-family: 'Roboto Serif', sans-serif;
 }
-.services__subtitle {
-	color: #64CCC5;
-	font-size: 30px;
-	line-height: 35px;
-	font-weight: 600;
-}
 .services__title {
 	max-width: 695px;
 	margin-top: 24px;
@@ -347,4 +348,98 @@ body {
 	color: var(--white-color);
   }
   
+/* About Us Section */
 
+.about_short {
+	padding: 100px 0;
+	background-color: var(--black-color);
+}
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	max-width: 41.8%;
+}
+.services__subtitle {
+
+}
+
+.about__inner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 50px;
+}
+.about__title {
+	font-family: 'Roboto Serif', sans-serif;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 75px;
+	color: var(--white-color);
+}
+.about__desc {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--light-grey-color);
+}
+.about__main-counts {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 60px;
+}
+.about__main-count span {
+	font-family: 'Roboto Serif',
+	sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 63px;
+	margin-bottom: 9px;
+	color: var(--primary-color);
+}
+.about__main-count p {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: var(--light-grey-color);
+}
+
+.about_image-list {
+	position: relative;
+    width: 50%;
+    height: 703px;
+}
+.about__image:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.about__image:nth-child(2) {
+	position: absolute;
+	top: 4%;
+	left: 5%;
+}
+.about__image:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.about__image {
+	width: 640px;
+	height: 640px;
+}
+.about__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+}
+
+.btn-about {
+	max-width: 240px;
+}
