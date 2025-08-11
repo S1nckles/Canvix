@@ -316,8 +316,6 @@ body {
 	background-color: var(--black-color);
 	color: var(--white-color);
 }
-.service__card-icon {
-}
 .service__card-content {
 	display: flex;
 	flex-direction: column;
@@ -361,10 +359,6 @@ body {
 	gap: 25px;
 	max-width: 41.8%;
 }
-.services__subtitle {
-
-}
-
 .about__inner {
 	display: flex;
 	flex-direction: row;
@@ -648,4 +642,118 @@ body {
 .showcase__btn:hover {
 	background-color: lightgray;
 	color: var(--black-color);
+}
+
+/* CTA (Comment) Styles */
+
+.cta {
+	max-height: 482px;
+	margin-top: 271px;
+}
+.cta__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: relative;
+	
+	padding: 45px 45px 110px 45px;
+	border-radius: 20px;
+	background-color: var(--light-grey-color);
+	color: var(--black-color);
+}
+.cta__avatar {
+	margin-bottom: 35px;
+}
+
+.cta__text h2 {
+
+	margin-bottom: 35px;
+	text-align: center;
+
+	font-family: 'Roboto Serif',
+	sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 29px;
+}
+.cta__author {
+	margin-bottom: 21px;
+	text-align: center;
+}
+.author__name h2 {
+	margin-bottom: 5px;
+
+	font-family: "Roboto Serif", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+}
+.author__profession h2 {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: rgba(12, 12, 12, 0.902);
+}
+
+.swiper-container {
+	position: relative;
+}
+
+
+.testimonial {
+	position: relative;
+	border-radius: 12px;
+	padding: 48px 24px 84px;      
+  }
+  
+  .testimonial-nav {
+	position: absolute;
+	left: 50%;
+	bottom: 45px;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 12px;
+  }
+  
+
+  .nav-btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;               
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0,0,0,.15);
+	transition: transform .15s ease, background .15s ease, opacity .15s ease;
+  }
+  
+  .nav-btn:hover {
+	border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    transform: translateY(-1px);
+}
+
+.nav-btn svg {
+    width: 24px;
+    height: 24px;
+}
+  .nav-btn:active { transform: translateY(0); }
+  .nav-btn:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+  
+  .swiper-button-disabled, .nav-btn:disabled {
+	opacity: .35;
+	pointer-events: none;
+  }
+  
+.nav-btn svg {
+	width: 24px;
+	height: 24px;
+
 }
