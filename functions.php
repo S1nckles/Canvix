@@ -30,3 +30,23 @@ function register_project_post_type() {
     ]);
 }
 add_action('init', 'register_project_post_type');
+
+function business_agency_enqueue_swiper() {
+    // CSS Swiper
+    wp_enqueue_style(
+        'swiper-bundle', 
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
+        array(),         
+        '11.0.0'         
+    );
+
+    // JS Swiper
+    wp_enqueue_script(
+        'swiper-bundle',
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+        array(),        
+        '11.0.0',        
+        true             
+    );
+}
+add_action( 'wp_enqueue_scripts', 'business_agency_enqueue_swiper' );
