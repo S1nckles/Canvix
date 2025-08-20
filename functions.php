@@ -31,22 +31,19 @@ function register_project_post_type() {
 }
 add_action('init', 'register_project_post_type');
 
-function business_agency_enqueue_swiper() {
-    // CSS Swiper
-    wp_enqueue_style(
-        'swiper-bundle', 
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
-        array(),         
-        '11.0.0'         
-    );
-
-    // JS Swiper
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('ba-style', get_stylesheet_uri(), [], null);
+  
+    // Swiper CSS/JS from CDN
+    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], null);
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], null, true);
+  
     wp_enqueue_script(
-        'swiper-bundle',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
-        array(),        
-        '11.0.0',        
-        true             
+      'cta-swiper',
+      get_stylesheet_directory_uri() . '/assets/js/cta-swiper.js',
+      ['swiper'],
+      '1.0.2',
+      true
     );
-}
-add_action( 'wp_enqueue_scripts', 'business_agency_enqueue_swiper' );
+  });
+  
