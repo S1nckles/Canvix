@@ -1,5 +1,6 @@
 <?php
 
+
 function business_agency_enqueue_assets() {
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 }
@@ -47,3 +48,7 @@ add_action('wp_enqueue_scripts', function () {
     );
   });
   
+  add_filter('body_class', function ($classes) {
+    $classes[] = is_front_page() ? 'is-home' : 'is-inner'; // або is_home() якщо головна = блог
+    return $classes;
+  });
