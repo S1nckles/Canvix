@@ -1352,3 +1352,47 @@ body.is-inner .btn:hover {
 	object-position: center;
 	border-radius: 20px;
 }
+
+/* About Services Styles */
+
+.about-services {
+	width: 100%;
+	margin-top: 167px;
+}
+.about-services__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 66px;
+}
+.about-services__item {
+	max-width: 422px;
+	padding: 45px 19.5px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	
+	font-family: 'DM Sans', sans-serif;
+	color: var(--black-color);
+}
+
+.about-services__procentage {
+	font-family: 'Roboto Serif', sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 53px;
+}
+.about-services__title {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 33px;
+}
+.about-services__desc {
+	text-align: center;
+
+	font-size: 18px;
+	line-height: 23px;
+	opacity: 0.9;
+}
