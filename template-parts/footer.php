@@ -11,19 +11,19 @@
                     <div class="nav__pages">
                         <h5 class="nav__title">Nav Pages</h5>
                         <div class="nav__links nav__links-pages">
-                            <div class="nav__link nav__links-pages"><a href="#">Home</a></div>
-                            <div class="nav__link nav__links-pages"><a href="#">About</a></div>
-                            <div class="nav__link nav__links-pages"><a href="#">Services</a></div>
-                            <div class="nav__link nav__links-pages"><a href="#">Contact us</a></div>
+                            <div class="nav__link nav__link-footer nav__links-pages"><a href="#">Home</a></div>
+                            <div class="nav__link nav__link-footer nav__links-pages"><a href="#">About</a></div>
+                            <div class="nav__link nav__link-footer nav__links-pages"><a href="#">Services</a></div>
+                            <div class="nav__link nav__link-footer nav__links-pages"><a href="#">Contact us</a></div>
                         </div>
                     </div>
                     <div class="nav__utilites">
                         <h5 class="nav__title">Nav Utilites</h5>
                         <div class="nav__links nav__links-utilites">
-                            <div class="nav__link nav__links-utilites"><a href="#">Style Guide </a></div>
-                            <div class="nav__link nav__links-utilites"><a href="#">Instruction</a></div>
-                            <div class="nav__link nav__links-utilites"><a href="#">License</a></div>
-                            <div class="nav__link nav__links-utilites"><a href="#">Changelog</a></div>
+                            <div class="nav__link nav__link-footer nav__links-utilites"><a href="#">Style Guide </a></div>
+                            <div class="nav__link nav__link-footer nav__links-utilites"><a href="#">Instruction</a></div>
+                            <div class="nav__link nav__link-footer nav__links-utilites"><a href="#">License</a></div>
+                            <div class="nav__link nav__link-footer nav__links-utilites"><a href="#">Changelog</a></div>
                         </div>
                     </div>
                 </div>
