@@ -22,9 +22,7 @@ if ($about): ?>
 
         <div class="about__content">
 
-          <!-- Треба зробити глобальний стиль бо майже для всіх секціїв є такий стиль і span для тайтлу секції -->
           <span class="section__subtitle">About us</span>
-          <!--  -->
           
           <?php if (!empty($about['title'])): ?>
             <h2 class="about__title"><?= esc_html($about['title']) ?></h2>
@@ -44,8 +42,6 @@ if ($about): ?>
               <p>Revenue generated</p>
             </div>
           </div>
-
-          <!-- Робив похожу кнопку в hero просто візьму з відтам стилі та розмітку -->
         
           <?php if (!empty($about_short['button_text']) && !empty($about_short['button_url'])): ?>
             <a href="<?= esc_url($about_short['button_url']) ?>" class="btn btn-link btn-about">
