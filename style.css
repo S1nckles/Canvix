@@ -1396,3 +1396,210 @@ body.is-inner .btn:hover {
 	line-height: 23px;
 	opacity: 0.9;
 }
+
+/* About Mission Styles */
+
+.about-mission {
+	width: 100%;
+	margin-top: 100px;
+	background-color: var(--black-color);
+	padding: 237px 0;
+}
+.about-mission__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 71px;
+	
+}
+.about-mission__info {
+	width: 42%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	font-family: 'DM Sans', sans-serif;
+
+}
+.mission-section__subtitle {
+	margin-bottom: 24px;
+	
+}
+.mission__title {
+	font-family: 'Roboto Serif', sans-serif;
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 75px;
+	color: var(--white-color);
+
+	margin-bottom: 32px;
+}
+.mission__desc {
+	font-weight:400;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--light-grey-color);
+
+	margin-bottom: 48px;
+}
+.mission__list {
+	max-height: 141px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 10px 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.mission-list__item {
+	max-width: 284px;
+	padding: 0 0 0 21px;
+	position: relative;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--white-color);
+
+}
+.mission-list__item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: var(--primary-color); 
+}
+
+.about-mission__review {
+	width: 52%;
+	height: 470px;
+	position: relative;
+}
+
+.mission__team {
+	position: absolute;
+	top: -137px;
+	left: 0;
+	z-index: 2;
+	
+	width: 325px;
+	height: 450px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+
+}
+
+.mission__members {
+	position: absolute;
+	top: -66px;
+	left: 316px;
+	z-index: 5;
+	
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+.mission-review__inner {
+	position: relative;
+	padding: 20px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.members__title {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--black-color);
+	opacity: 0.9;
+}
+.members__team {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0px;
+}
+.members__team img {
+	position: relative;
+	margin-right: -18px;
+}
+.members__team img:last-child {
+	margin-right: 0;
+}
+
+
+.mission__results {
+	position: absolute;
+	bottom: 144px;
+	left: 35px;
+}
+.results__inner {
+	position: relative;
+	color: white;
+}
+
+.results__inner span {
+	position: absolute;
+	top: 40px;
+	left: 187px;
+	width: 2px;
+	height: 124px;
+	background-color: var(--white-color);
+}
+
+.result__conversations {
+	top: 20px;
+	left: 0;
+}
+.result__projects {
+	top: 89px;
+	left: 208px;
+}
+
+.result__conversations, .result__projects {
+	position: absolute;
+	width: 167px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+.result__conversations h3, .result__projects h3 {
+	font-family: 'Roboto Serif', sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 53px;
+	text-align: center;
+
+}
+.result__conversations p, .result__projects p {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+}
+
+
+.mission__team-2 {
+	position: absolute;
+	bottom: -112px;
+	right: 0;
+	z-index: 3;
+
+	max-width: 285px;
+	max-height: 343px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+}
