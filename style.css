@@ -1184,6 +1184,7 @@ body {
 
 	border-radius: 20px;
 }
+
 .recent-projects__item-image img:hover {
 	transform: scale(1.01);
 	transition: transform 0.4s ease;
@@ -1228,9 +1229,10 @@ body.is-inner .logo--black {
 body.is-inner .nav__link a {
 	color: #0C0C0C;
 }
+
 body.is-inner .nav__link-footer a {
 	color: #FBFBFB;
-} 
+}
 
 body.is-inner .nav__link a:hover {
 	color: var(--primary-color);
@@ -1250,8 +1252,9 @@ body.is-inner .btn:hover {
 /* About Page */
 
 .about-hero {
-	margin: 168px 0 ;
+	margin: 168px 0;
 }
+
 .about-hero__inner {
 	display: flex;
 	flex-direction: row;
@@ -1260,10 +1263,11 @@ body.is-inner .btn:hover {
 	gap: 50px;
 	padding: 92px 0 92px 72px;
 	height: 705px;
-	
+
 	background-color: var(--black-color);
 	border-radius: 20px;
 }
+
 .about-hero__content {
 	display: flex;
 	flex-direction: column;
@@ -1271,16 +1275,20 @@ body.is-inner .btn:hover {
 	width: 55%;
 
 }
-.about-hero__subtitle, .about-hero__desc {
+
+.about-hero__subtitle,
+.about-hero__desc {
 	font-family: 'Dm Sans', sans-serif;
 	font-weight: 400;
 	line-height: 23px;
 	font-size: 18px;
 	color: var(--white-color);
 }
+
 .about-hero__subtitle {
 	margin-bottom: 8px;
 }
+
 .about-hero__title {
 	font-family: 'Roboto Serif', sans-serif;
 	font-weight: 600;
@@ -1289,23 +1297,28 @@ body.is-inner .btn:hover {
 	color: var(--white-color);
 	margin-bottom: 24px;
 }
+
 .about-hero__title span {
 	color: var(--primary-color);
 }
+
 .about-hero__desc {
 	margin-bottom: 40px;
 }
+
 .about-hero__review {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 12px;
 }
+
 .about-hero__review>img {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
 }
+
 .review__info {
 	font-family: 'Roboto Serif', sans-serif;
 	font-weight: 500;
@@ -1313,14 +1326,17 @@ body.is-inner .btn:hover {
 	line-height: 23px;
 	color: var(--white-color);
 }
+
 .review__stars {
 	margin-top: 2px;
 }
+
 .about-hero__image-list {
 	width: 45%;
 	height: 100%;
 	position: relative;
 }
+
 .about-page__image:first-child {
 	position: absolute;
 	top: 0;
@@ -1359,12 +1375,14 @@ body.is-inner .btn:hover {
 	width: 100%;
 	margin-top: 167px;
 }
+
 .about-services__inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 66px;
 }
+
 .about-services__item {
 	max-width: 422px;
 	padding: 45px 19.5px;
@@ -1373,7 +1391,7 @@ body.is-inner .btn:hover {
 	flex-direction: column;
 	align-items: center;
 	gap: 15px;
-	
+
 	font-family: 'DM Sans', sans-serif;
 	color: var(--black-color);
 }
@@ -1384,11 +1402,13 @@ body.is-inner .btn:hover {
 	font-size: 45px;
 	line-height: 53px;
 }
+
 .about-services__title {
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 33px;
 }
+
 .about-services__desc {
 	text-align: center;
 
@@ -1405,14 +1425,16 @@ body.is-inner .btn:hover {
 	background-color: var(--black-color);
 	padding: 237px 0;
 }
+
 .about-mission__inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 71px;
-	
+
 }
+
 .about-mission__info {
 	width: 42%;
 	display: flex;
@@ -1422,10 +1444,12 @@ body.is-inner .btn:hover {
 	font-family: 'DM Sans', sans-serif;
 
 }
+
 .mission-section__subtitle {
 	margin-bottom: 24px;
-	
+
 }
+
 .mission__title {
 	font-family: 'Roboto Serif', sans-serif;
 	font-weight: 600;
@@ -1435,23 +1459,26 @@ body.is-inner .btn:hover {
 
 	margin-bottom: 32px;
 }
+
 .mission__desc {
-	font-weight:400;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
 	color: var(--light-grey-color);
 
 	margin-bottom: 48px;
 }
+
 .mission__list {
 	max-height: 141px;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    gap: 10px 24px;
-    width: 100%;
-    flex-wrap: wrap;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	gap: 10px 24px;
+	width: 100%;
+	flex-wrap: wrap;
 }
+
 .mission-list__item {
 	max-width: 284px;
 	padding: 0 0 0 21px;
@@ -1463,6 +1490,7 @@ body.is-inner .btn:hover {
 	color: var(--white-color);
 
 }
+
 .mission-list__item::before {
 	content: '';
 	position: absolute;
@@ -1471,7 +1499,7 @@ body.is-inner .btn:hover {
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background-color: var(--primary-color); 
+	background-color: var(--primary-color);
 }
 
 .about-mission__review {
@@ -1485,7 +1513,7 @@ body.is-inner .btn:hover {
 	top: -137px;
 	left: 0;
 	z-index: 2;
-	
+
 	width: 325px;
 	height: 450px;
 	overflow: hidden;
@@ -1500,19 +1528,21 @@ body.is-inner .btn:hover {
 	top: -66px;
 	left: 316px;
 	z-index: 5;
-	
+
 	border-radius: 20px;
 	background-color: #ffffff;
 }
+
 .mission-review__inner {
 	position: relative;
 	padding: 20px;
-	
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
 }
+
 .members__title {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
@@ -1521,16 +1551,19 @@ body.is-inner .btn:hover {
 	color: var(--black-color);
 	opacity: 0.9;
 }
+
 .members__team {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 0px;
 }
+
 .members__team img {
 	position: relative;
 	margin-right: -18px;
 }
+
 .members__team img:last-child {
 	margin-right: 0;
 }
@@ -1541,6 +1574,7 @@ body.is-inner .btn:hover {
 	bottom: 144px;
 	left: 35px;
 }
+
 .results__inner {
 	position: relative;
 	color: white;
@@ -1559,12 +1593,14 @@ body.is-inner .btn:hover {
 	top: 20px;
 	left: 0;
 }
+
 .result__projects {
 	top: 89px;
 	left: 208px;
 }
 
-.result__conversations, .result__projects {
+.result__conversations,
+.result__projects {
 	position: absolute;
 	width: 167px;
 
@@ -1573,7 +1609,9 @@ body.is-inner .btn:hover {
 	align-items: center;
 	gap: 15px;
 }
-.result__conversations h3, .result__projects h3 {
+
+.result__conversations h3,
+.result__projects h3 {
 	font-family: 'Roboto Serif', sans-serif;
 	font-weight: 600;
 	font-size: 45px;
@@ -1581,7 +1619,9 @@ body.is-inner .btn:hover {
 	text-align: center;
 
 }
-.result__conversations p, .result__projects p {
+
+.result__conversations p,
+.result__projects p {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -1610,6 +1650,7 @@ body.is-inner .btn:hover {
 	width: 100%;
 	margin-top: 100px;
 }
+
 .about-team__inner {
 	width: 100%;
 	display: flex;
@@ -1618,6 +1659,7 @@ body.is-inner .btn:hover {
 	gap: 80px;
 	color: var(--black-color);
 }
+
 .about-team__title {
 	font-family: 'Roboto Serif', sans-serif;
 	font-weight: 600;
@@ -1626,13 +1668,15 @@ body.is-inner .btn:hover {
 	color: var(--black-color);
 	text-align: center;
 }
+
 .about-team__members {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 73px;
-	
+
 }
+
 .about-team__member {
 	width: 420px;
 	height: 570px;
@@ -1641,11 +1685,13 @@ body.is-inner .btn:hover {
 	display: flex;
 	flex-direction: column;
 }
+
 .member__photo {
 	border-radius: 20px;
 	height: 91.5%;
 	position: relative;
 }
+
 .member__photo>img {
 	width: 100%;
 	height: 100%;
@@ -1653,6 +1699,7 @@ body.is-inner .btn:hover {
 	object-position: center;
 	border-radius: 20px;
 }
+
 .member__socials {
 	position: absolute;
 	top: 15px;
@@ -1664,6 +1711,7 @@ body.is-inner .btn:hover {
 	align-items: center;
 	gap: 20px;
 }
+
 .socials__item {
 	width: 35px;
 	height: 35px;
@@ -1671,14 +1719,17 @@ body.is-inner .btn:hover {
 	background-color: var(--white-color);
 	padding: 10px;
 }
+
 .socials__item:hover {
 	transform: scale(1.1);
 	transition: transform 0.4s ease;
 }
+
 .socials__item img {
 	width: 16px;
 	height: 16px;
 }
+
 .member__name {
 	margin-top: 16px;
 
@@ -1690,9 +1741,11 @@ body.is-inner .btn:hover {
 
 	text-decoration: none;
 }
+
 .member__name:hover {
 	text-decoration: underline;
 }
+
 .member__role {
 	margin-top: 10px;
 
@@ -1709,6 +1762,7 @@ body.is-inner .btn:hover {
 .about-banner {
 	margin: 100px 0;
 }
+
 .about-banner__inner {
 	position: relative;
 	border-radius: 20px;
@@ -1721,6 +1775,7 @@ body.is-inner .btn:hover {
 	align-items: center;
 	gap: 24px;
 }
+
 .about-banner__inner::before {
 	content: '';
 	position: absolute;
@@ -1733,6 +1788,7 @@ body.is-inner .btn:hover {
 	border-radius: 20px;
 	z-index: 4;
 }
+
 .about-banner__title {
 	font-family: "Roboto Serif", sans-serif;
 	font-weight: 600;
@@ -1742,14 +1798,16 @@ body.is-inner .btn:hover {
 	position: relative;
 	z-index: 5;
 }
+
 .about-banner__btn {
 	background: var(--white-color) !important;
 	color: var(--black-color) !important;
-	opacity: 0.9 ;
+	opacity: 0.9;
 	border: none !important;
 	position: relative;
 	z-index: 5;
 }
+
 .about-banner__btn:hover {
 	transform: scale(1.05);
 	transition: transform 0.4s ease;
@@ -1760,26 +1818,31 @@ body.is-inner .btn:hover {
 .contact-page {
 	margin: 157px 0;
 }
+
 .contact-page__inner {
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
 
-	color:	 var(--black-color);
+	color: var(--black-color);
 }
+
 .contact__form-wrapper {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;;
+	align-items: flex-start;
+	;
 	justify-content: space-between;
 	gap: 204px;
 }
+
 .contact__info {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	max-width: 485px;
 }
+
 .contact__info h1 {
 	font-family: 'Roboto Serif', serif;
 	font-size: 64px;
@@ -1787,11 +1850,13 @@ body.is-inner .btn:hover {
 	line-height: 75px;
 	margin-bottom: 32px;
 }
+
 .contact-details__content {
 	display: flex;
 	flex-direction: column;
 	gap: 2px;
 }
+
 .contact__info p {
 	font-family: 'Roboto Serif', serif;
 	font-size: 20px;
@@ -1799,13 +1864,14 @@ body.is-inner .btn:hover {
 	line-height: 23px;
 	color: var(--black-color);
 }
-.contact__info a  {
+
+.contact__info a {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
 
-	color: var(--black-color);	
+	color: var(--black-color);
 	opacity: 0.9;
 	text-decoration: none;
 }
@@ -1813,6 +1879,7 @@ body.is-inner .btn:hover {
 .contact__info a:hover {
 	text-decoration: underline;
 }
+
 .contact__info span {
 	width: 100%;
 	height: 1px;
@@ -1820,18 +1887,21 @@ body.is-inner .btn:hover {
 
 	margin-top: 32px;
 }
+
 .contact__details {
 	margin-top: 32px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
+
 .contact__details li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 26px;
 }
+
 .contact-details__img {
 	width: 50px;
 	height: 50px;
@@ -1839,10 +1909,12 @@ body.is-inner .btn:hover {
 	padding: 14px 0px 14px 13px;
 	background-color: var(--black-color);
 }
+
 .contact-details__img img {
 	width: 25px;
 	height: 20px;
 }
+
 .contact__socials {
 	margin-top: 32px;
 
@@ -1851,6 +1923,7 @@ body.is-inner .btn:hover {
 	align-items: flex-start;
 	gap: 40px;
 }
+
 .contact__social img {
 	max-width: 32.85px;
 	height: 32.85px;
@@ -1881,20 +1954,29 @@ body.is-inner .btn:hover {
 }
 
 
-.contact-form__firstName, .contact__form__label , .contact-form__lastName , 
-.contact-form__email , .contact-form__phone {
+.contact-form__firstName,
+.contact__form__label,
+.contact-form__lastName,
+.contact-form__email,
+.contact-form__phone {
 	padding-top: 30px;
 	width: 45%;
 	position: relative;
 
 }
-.contact-form__message  {
+
+.contact-form__message {
 	padding-top: 30px;
 	width: 100%;
 	position: relative;
 }
-.contact-form__firstName input, .contact__form__label input , .contact-form__lastName input , 
-.contact-form__email input , .contact-form__phone input, .contact-form__message  input {
+
+.contact-form__firstName input,
+.contact__form__label input,
+.contact-form__lastName input,
+.contact-form__email input,
+.contact-form__phone input,
+.contact-form__message input {
 	width: 100%;
 	font-family: 'Roboto Serif', serif;
 	font-weight: 500;
@@ -1907,7 +1989,7 @@ body.is-inner .btn:hover {
 
 .contact__form__label {
 	position: absolute;
-	top:-30px;
+	top: -30px;
 	left: 0px;
 
 	font-family: 'DM Sans', sans-serif;
@@ -1916,6 +1998,7 @@ body.is-inner .btn:hover {
 	line-height: 23px;
 	color: var(--black-color);
 }
+
 .contact-form__btn {
 	padding: 12px 15px;
 	font-family: 'DM Sans', sans-serif;
@@ -1928,6 +2011,7 @@ body.is-inner .btn:hover {
 	cursor: pointer;
 	border-radius: 23px;
 }
+
 .contact-form__btn:hover {
 	transform: scale(1.05);
 	transition: transform 0.4s ease;
@@ -1939,6 +2023,7 @@ body.is-inner .btn:hover {
 	border-radius: 20px;
 	overflow: hidden;
 }
+
 .contact__map iframe {
 	width: 100%;
 	height: 100%;
